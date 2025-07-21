@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
+  <!-- Add language detection script FIRST -->
+  <script src="../assets/js/language-redirect.js"></script>
+  
+  <!-- Update Title -->
+  <title>Daniel Hackl - Portfolio</title>
+  <meta name="description" content="Portfolio-Website von Daniel Hackl, präsentiert Projekte und Erfahrungen in Energietechnik, Messtechnik und nachhaltigen Lösungen.">
+  <meta name="keywords" content="Daniel Hackl, Energietechniker, Physiker, Messtechnik, Erneuerbare Energie, Wien, Thermische Analyse, Energieeffizienz">
+
+  <!-- Favicons -->
+  <link href="../assets/img/Atom_Logo.png" rel="icon" type="image/svg+xml">
+  <link href="../assets/img/Atom_Logo.png" rel="apple-touch-icon">
+  
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../assets/css/flaticon.css">  
+
+  <!-- Main CSS File -->
+  <link href="../assets/css/main.css" rel="stylesheet">
+  <!-- Custom CSS for fixes -->
+  <link href="../assets/css/custom.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: DevFolio
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      
+      <!-- Logo -->
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">Daniel Hackl</h1>
+      </a>
+      
+      <!-- Navigation and Language Switcher Container -->
+      <div class="nav-container d-flex align-items-center">
+        
+        <!-- Main Navigation -->
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <!-- Mobile Language Switcher - Move to TOP of menu -->
+            <div class="mobile-lang-switcher d-xl-none">
+              <li class="mobile-lang-item">
+                <a href="#" onclick="LanguageRedirect.setLanguage('en'); return false;" 
+                   class="mobile-lang-link" id="mobile-lang-en">
+                  <span class="flag">🇺🇸</span>
+                  <span>English</span>
+                </a>
+              </li>
+              <li class="mobile-lang-item">
+                <a href="#" onclick="LanguageRedirect.setLanguage('de'); return false;" 
+                   class="mobile-lang-link active" id="mobile-lang-de">
+                  <span class="flag">🇩🇪</span>
+                  <span>Deutsch</span>
+                </a>
+              </li>
+              <div class="mobile-lang-divider"></div>
+            </div>
+            
+            <!-- Navigation Items -->
+            <li><a href="#hero">Start</a></li>
+            <li><a href="#about">Über mich</a></li>
+            <li><a href="#services">Dienstleistungen</a></li>
+            <li><a href="#resume">Lebenslauf</a></li>
+            <li><a href="#engagement">Engagement</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+        
+        <!-- Desktop Language Switcher - Only on Large Screens -->
+        <div class="language-switcher d-none d-xl-flex">
+          <a href="#" onclick="LanguageRedirect.setLanguage('en'); return false;" 
+             class="lang-link" title="English" 
+             id="lang-en">
+            <span class="flag">🇺🇸</span>
+            <span class="lang-text">EN</span>
+          </a>
+          <a href="#" onclick="LanguageRedirect.setLanguage('de'); return false;" 
+             class="lang-link" title="Deutsch"
+             id="lang-de">
+            <span class="flag">🇩🇪</span>
+            <span class="lang-text">DE</span>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+      <img id="hero-bg" src="../assets/images/about/BG_first_frame.jpg" alt="" data-src="../assets/images/about/BG_16FPS.gif" data-aos="fade-in" loading="eager" style="opacity: 1;">
+      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+        <h2>Willkommen!</h2>
+        <h1>Ich bin Daniel Hackl</h1>
+        <p><span class="typed" data-typed-items="ein Physiker., ein Energietechniker., ein Messtechnik-Spezialist."></span></p>
+        <a href="../assets/files/Lebenslauf_Daniel_Hackl_Website.pdf" target="_blank" class="btn-get-started">Lebenslauf ansehen</a>
+      </div>
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Über mich</h2>
+        <p>Erfahren Sie mehr über meinen Hintergrund und meine Leidenschaft für Physik und Energietechnik.</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="" data-src="../assets/images/about/portrait.jpg" class="img-fluid portrait-lazy" alt="Daniel Hackl Portrait" loading="lazy" width="400" height="500" style="opacity: 0;">
+          </div>
+          <div class="col-lg-8 content">
+            <h3>Physiker &amp; Energietechniker</h3>
+            <p class="fst-italic py-3">
+              Ich bin Physiker und Energietechniker aus Wien und begeistere mich dafür, die komplexesten technischen Herausforderungen mit einem multidisziplinären und analytischen Ansatz zu lösen. Meine Stärken liegen in wissenschaftlicher Präzision, breitem technischem Verständnis und der Fähigkeit, innovative Lösungen in anspruchsvollen Umgebungen zu entwickeln.
+            </p>
+            <div class="row gy-4">
+              <div class="col-md-12">
+                <p>
+                  Meine Expertise umfasst Messtechnik, nachhaltige Lösungen für technische Fragestellungen sowie die praktische Anwendung meines Wissens in der Energietechnik – sowohl in der Energieerzeugung als auch in Forschung &amp; Entwicklung. Es ist mir ein Anliegen, mit meinen Fähigkeiten zur Weiterentwicklung der Grundlagen unserer Gesellschaft beizutragen.
+                </p>
+                <p>
+                  Mein Fokus liegt auf der Weiterentwicklung von Energietechnologien durch präzise Messtechniken und analytische Problemlösung. Besonders interessieren mich die Integration verschiedener Energiequellen, innovative Ansätze für Energiespeicherung und -verteilung sowie Effizienzsteigerungen. Mit einer soliden Grundlage in Physik und Ingenieurwissenschaften bringe ich einen multidisziplinären Blickwinkel in Energieprojekte ein. Meine technische Expertise umfasst thermodynamische Analysen, datengetriebene Messmethoden und Materialcharakterisierung für Energieanwendungen. Ich bin verpflichtet, zu Europas nachhaltiger Energiewende durch rigorose wissenschaftliche Methoden und kollaborative Innovation beizutragen.
+                </p>
+              </div>
+            </div>
+            <!-- Social Links -->
+            <div class="social-links d-flex mt-4 justify-content-center">
+              <a href="https://github.com/danielhackl-tu" target="_blank" class="mx-2"><i class="bi bi-github"></i></a>
+              <a href="https://www.linkedin.com/in/daniel-hackl-vienna" target="_blank" class="mx-2"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section accent-background">
+
+      <img src="../assets/images/portfolio/Pick_and_place.jpg" alt="" data-aos="fade-in" loading="lazy">
+
+      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row gy-4 justify-content-center text-center">
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="stats-item w-100 h-100">
+          <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="0" class="purecounter">4</span>
+          <p>Große Projekte</p>
+        </div>
+        </div><!-- End Stats Item -->
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="stats-item w-100 h-100">
+          <span data-purecounter-start="0" data-purecounter-end="3260" data-purecounter-duration="1.5" class="purecounter"></span>
+          <p>Forschungsstunden</p>
+        </div>
+        </div><!-- End Stats Item -->
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="stats-item w-100 h-100">
+            <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="0" class="purecounter">2</span>
+            <p>Führungsrollen</p>
+          </div>
+        </div><!-- End Stats Item -->
+        
+      </div>
+
+      </div>
+    </section><!-- /Stats Section -->
+
+    <!-- Services Section - HIER EINFÜGEN -->
+    <section id="services" class="services section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Dienstleistungen</h2>
+        <p>Expertise in verschiedenen technischen Bereichen.</p>
+      </div>
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-lightning-charge"></i></div>
+              <h4><a href="service-energy.html" class="stretched-link">Energietechnik</a></h4>
+              <p>Experte für Energiesysteme mit Fokus auf Effizienz, Integration erneuerbarer Energien und Messtechnik.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-lightbulb"></i></div> 
+              <h4><a href="service-research.html" class="stretched-link">Forschung & Entwicklung</a></h4>
+              <p>Erfahren im Entwerfen von Experimenten und Analysieren von Daten für Energie- und Messanwendungen.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon" style="background: #0072bb; border-radius: 50%; width: 4.5rem; height: 4.5rem; display: flex; align-items: center; justify-content: center;">
+                <img src="../assets/img/radiation-icon.svg" alt="Radioactive Symbol"
+                  style="height: 2.5rem; width: 2.5rem; filter: invert(1) brightness(2); color: #fff;">
+              </div>
+              <h4><a href="service-safety.html" class="stretched-link">Strahlenschutz</a></h4>
+              <p>Kompetent in Strahlenschutzprotokollen, Neutronenflussmessung und Aktivitätsbestimmung.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-graph-up"></i></div> 
+              <h4><a href="service-analysis.html" class="stretched-link">Datenanalyse & Modellierung</a></h4>
+              <p>Experte in der Analyse komplexer Messdaten, statistischer Modellierung und Entwicklung prädiktiver Modelle für Energiesysteme.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+           <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon" style="background: #0072bb; border-radius: 50%; width: 4.5rem; height: 4.5rem; display: flex; align-items: center; justify-content: center;">
+                <img src="../assets/img/materials-icon.svg" alt="Materials Symbol"
+                  style="height: 2.5rem; width: 2.5rem; filter: invert(1) brightness(2); color: #fff;">
+              </div>
+              <h4><a href="service-materials.html" class="stretched-link">Materialwissenschaft</a></h4>
+              <p>Spezialisiertes Wissen in Hochtemperatursupraleitern und Neutronenbestrahlungseffekten auf Materialien.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-cpu"></i></div>
+              <h4><a href="service-instrumentation.html" class="stretched-link">Instrumentierung & Steuerung</a></h4>
+              <p>Spezialisiert auf Messinstrumentierung, Sensortechnologien und Steuersysteme für Energieanwendungen.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+      </div>
+    </section><!-- /Services Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Lebenslauf</h2>
+        <p>Überblick über meinen beruflichen Werdegang und meine Ausbildung.</p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Zusammenfassung</h3>
+            <div class="resume-item pb-0">
+              <h4>Daniel Hackl</h4>
+              <p><em>Vielseitiger Energietechniker mit Expertise in Messtechnologien und fortgeschrittenen Materialien. Verbindung starker analytischer Fähigkeiten mit praktischen ingenieurstechnischen Ansätzen zur Entwicklung effizienter und nachhaltiger Energielösungen.</em></p>
+              <ul>
+                <li>1030 Wien, Österreich</li>
+                <li>website@daniel-hackl.com</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Ausbildung</h3>
+            
+            <!-- Master's Degree -->
+            <div class="resume-item">
+              <h4>Dipl.-Ing. Physikalische Energie- und Messtechnik</h4>
+              <div class="resume-meta d-flex flex-wrap gap-3 mb-2">
+                <span class="meta-item">
+                  <i class="bi bi-calendar3"></i>
+                  <small>Juli 2022 - heute</small>
+                </span>
+                <span class="meta-item">
+                  <i class="bi bi-geo-alt"></i>
+                  <small>Wien</small>
+                </span>
+                <span class="meta-item">
+                  <i class="bi bi-clock"></i>
+                  <small>Vollzeit</small>
+                </span>
+              </div>
+              <h5>Technische Universität Wien</h5>
+              
+              <div class="d-flex align-items-start">
+                <ul class="flex-grow-1">
+                  <li>Spezialisierung auf Energietechnik, Absolvierung verschiedener Laborübungen und drei großer Projekte</li>
+                  <li>Masterarbeit über in-situ Messung des Widerstands während der Ausheilung neutronenbestrahlter Hochtemperatursupraleiter</li>
+                  <li>Fokus auf Messtechnologien und fortgeschrittene Materialforschung</li>
+                </ul>
+                <!-- <img src="../assets/images/experience/tu-vienna-logo.png" alt="TU Vienna Logo" class="img-fluid ms-3" style="max-width: 150px; height: auto;"> -->
+              </div>
+            </div>
+            
+            <!-- Bachelor's Degree -->
+            <div class="resume-item">
+              <h4>BSc Technische Physik</h4>
+              <div class="resume-meta d-flex flex-wrap gap-3 mb-2">
+                <span class="meta-item">
+                  <i class="bi bi-calendar3"></i>
+                  <small>Oktober 2017 - Juli 2022</small>
+                </span>
+                <span class="meta-item">
+                  <i class="bi bi-geo-alt"></i>
+                  <small>Wien</small>
+                </span>
+                <span class="meta-item">
+                  <i class="bi bi-clock"></i>
+                  <small>Vollzeit</small>
+                </span>
+              </div>
+              <h5>Technische Universität Wien</h5>
+              
+              <div class="d-flex align-items-start">
+                <ul class="flex-grow-1">
+                  <li>Umfassende Ausbildung in Physikprinzipien mit Fokus auf technische Anwendungen</li>
+                  <li>Bachelorarbeit über Sicherheitskonzepte für Druckwasserreaktoren von Generation II zu Generation III+</li>
+                  <li>Solide Grundlage in mathematischer Modellierung und experimenteller Physik</li>
+                </ul>
+                <!-- <img src="../assets/images/experience/tu-vienna-logo.png" alt="TU Vienna Logo" class="img-fluid ms-3" style="max-width: 150px; height: auto;"> -->
+              </div>
+            </div>
+            
+            <!-- Grammar School -->
+            <div class="resume-item">
+              <h4>AHS-Matura</h4>
+              <div class="resume-meta d-flex flex-wrap gap-3 mb-2">
+                <span class="meta-item">
+                  <i class="bi bi-calendar3"></i>
+                  <small>2009 - 2017</small>
+                </span>
+                <span class="meta-item">
+                  <i class="bi bi-geo-alt"></i>
+                  <small>Wien</small>
+                </span>
+                <span class="meta-item">
+                  <i class="bi bi-clock"></i>
+                  <small>Vollzeit</small>
+                </span>
+              </div>
+              <h5>GRG 21 Ödenburgerstraße</h5>
+              
+              <div class="d-flex align-items-start">
+                <ul class="flex-grow-1">
+                  <li>Abschluss mit Auszeichnung</li>
+                  <li>Starke Grundlage in Mathematik und Naturwissenschaften</li>
+                </ul>
+                <!-- <img src="../assets/images/experience/GRG21_Favicon.png" alt="GRG 21 Logo" class="img-fluid ms-3" style="max-width: 100px; height: auto;"> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Berufserfahrung</h3>
+            
+            <!-- Project Engineer - JUNO -->
+            <div class="resume-item">
+              <h4>Projektingenieur</h4>
+              <div class="resume-meta d-flex flex-wrap gap-3 mb-2">
+                <span class="meta-item">
+                  <i class="bi bi-calendar3"></i>
+                  <small>März 2025 - heute</small>
+                </span>
+                <span class="meta-item">
+                  <i class="bi bi-geo-alt"></i>
+                  <small>Wien</small>
+                </span>
+                <span class="meta-item">
+                  <i class="bi bi-clock"></i>
+                  <small>Teilzeit</small>
+                </span>
+              </div>
+              <h5>JUNO Nuclear Engineering & Consulting GmbH</h5>
+              
+              <div class="d-flex align-items-start">
+                <ul class="flex-grow-1">
+                  <li>Mitarbeit an Engineering-Projekten mit Schwerpunkt auf Koordination internationaler Projektpartner</li>
+                  <!-- <li>Koordination internationaler Projektpartner</li> -->
+                  <li>Durchführung von Berechnungen, Qualitätskontrolle und technische Dokumentation</li>
+                  <li>Unterstützung von Kunden bei Behördenverfahren</li>
+
+                </ul>
+                <!-- <img src="../assets/images/experience/JUNO_logo.jpg" alt="JUNO Logo" class="img-fluid ms-3" style="max-width: 100px; height: auto;"> -->
+              </div>
+            </div>
+
+            <!-- Graduate Researcher -->
+            <div class="resume-item">
+              <h4>Diplomand</h4>
+              <div class="resume-meta d-flex flex-wrap gap-3 mb-2">
+                <span class="meta-item">
+                  <i class="bi bi-calendar3"></i>
+                  <small>Sept. 2024 - Mai 2025</small>
+                </span>
+                <span class="meta-item">
+                  <i class="bi bi-geo-alt"></i>
+                  <small>Wien</small>
+                </span>
+                <span class="meta-item">
+                  <i class="bi bi-clock"></i>
+                  <small>Vollzeit</small>
+                </span>
+              </div>
+              <h5>Technische Universität Wien</h5>
+              
+              <div class="d-flex align-items-start">
+                <ul class="flex-grow-1">
+                  <li>Forschung an neutronenbestrahlten Hochtemperatursupraleitern für Fusionsanwendungen im Rahmen der Masterarbeit</li>
+                  <li>Entwurf und Herstellung maßgeschneiderter Probenhalter für in-situ Widerstandsmessungen während Temperaturbehandlungen</li>
+                  <li>Bestimmung des  Neutronenflusses im TRIGA-Forschungsreaktor zur genauen Bewertung der Bestrahlungsbedingungen</li>
+                  <li class="no-tick">
+                    <a href="../assets/references/Empfehlungsschreiben_Hackl.pdf" target="_blank">
+                      <i class="bi bi-file-earmark-text me-2"></i>Empfehlungsschreiben ansehen
+                    </a>
+                  </li>
+                </ul>
+                <!-- <img src="../assets/images/experience/tu-vienna-logo.png" alt="TU Vienna Logo" class="img-fluid ms-3" style="max-width: 150px; height: auto;"> -->
+              </div>
+            </div>
+            
+            <!-- Project Engineer - DMT -->
+            <div class="resume-item">
+              <h4>Projektingenieur (Studentischer Mitarbeiter)</h4>
+              <div class="resume-meta d-flex flex-wrap gap-3 mb-2">
+                <span class="meta-item">
+                  <i class="bi bi-calendar3"></i>
+                  <small>März 2024 - Dez. 2024</small>
+                </span>
+                <span class="meta-item">
+                  <i class="bi bi-geo-alt"></i>
+                  <small>Wien</small>
+                </span>
+                <span class="meta-item">
+                  <i class="bi bi-clock"></i>
+                  <small>Teilzeit</small>
+                </span>
+              </div>
+              <h5>DMT GmbH & Co. KG</h5>
+              
+              <div class="d-flex align-items-start">
+                <ul class="flex-grow-1">
+                  <li>Erstellung technischer Berichte und Berechnungen für Engineering-Projekte</li>
+                  <li>Entwicklung von Konzepten für Tiefbohrlochendlagerung</li>
+                  <li>Analyse von Marktdaten und Durchführung von Zielgruppenanalysen</li>
+                  <li>Bewertung der Wettbewerbslandschaft für Energielösungen</li>
+                  <!-- <li><a href="../assets/references/DMT_Dienstzeugnis.pdf" download><i class="bi bi-file-earmark-text me-2"></i>Arbeitszeugnis herunterladen</a></li> -->
+                </ul>
+                <!-- <img src="../assets/images/experience/dmt-logo.jpg" alt="DMT Logo" class="img-fluid ms-3" style="max-width: 100px; height: auto;"> -->
+              </div>
+            </div>
+            
+            <!-- Intern - NES -->
+            <div class="resume-item">
+              <h4>Praktikant</h4>
+              <div class="resume-meta d-flex flex-wrap gap-3 mb-2">
+                <span class="meta-item">
+                  <i class="bi bi-calendar3"></i>
+                  <small>September 2023</small>
+                </span>
+                <span class="meta-item">
+                  <i class="bi bi-geo-alt"></i>
+                  <small>Seibersdorf</small>
+                </span>
+                <span class="meta-item">
+                  <i class="bi bi-clock"></i>
+                  <small>Vollzeit</small>
+                </span>
+              </div>
+              <h5>Nuclear Engineering Seibersdorf GmbH</h5>
+              
+              <div class="d-flex align-items-start">
+                <ul class="flex-grow-1">
+                  <li>Mitwirkung bei der Modernisierung einer nuklearen Abfall-Konditionierungsanlage</li>
+                  <li>Durchführung einer Iststandsanalyse und Bewertung der Betriebsparameter</li>
+                  <li>Vergleich definierter Parameter vor und nach dem Umbau anhand von Probebetrieben</li>
+
+                  <!-- <li><a href="../assets/references/NES_Dienstzeugnis.pdf" download><i class="bi bi-file-earmark-text me-2"></i>Arbeitszeugnis herunterladen</a></li> -->
+                </ul>
+                <!-- <img src="../assets/images/experience/nes-logo.png" alt="NES Logo" class="img-fluid ms-3" style="max-width: 100px; height: auto;"> -->
+              </div>
+            </div>
+            
+            <!-- Physics Teacher -->
+            <div class="resume-item">
+              <h4>Physiklehrer</h4>
+              <div class="resume-meta d-flex flex-wrap gap-3 mb-2">
+                <span class="meta-item">
+                  <i class="bi bi-calendar3"></i>
+                  <small>Sept. 2022 - Sept. 2023</small>
+                </span>
+                <span class="meta-item">
+                  <i class="bi bi-geo-alt"></i>
+                  <small>Wien</small>
+                </span>
+                <span class="meta-item">
+                  <i class="bi bi-clock"></i>
+                  <small>Teilzeit</small>
+                </span>
+              </div>
+              <h5>Bildungsdirektion für Wien</h5>
+              
+              <div class="d-flex align-items-start">
+                <ul class="flex-grow-1">
+                  <li>Unterrichtete Physik in mehreren Oberstufenklassen und gestaltete motivierende Lerneinheiten</li>
+                  <li>Tätigkeit als Beisitzer bei mündlichen Reifeprüfungen in Physik</li>
+                  <li>Bewertung und Beurteilung von Schülerleistungen</li>
+                  <li>Entwicklung praxisnaher Unterrichtsmethoden für komplexe physikalische Konzepte</li>
+                  <!-- <li><a href="../assets/references/Bildungsdirektion_Dienstzeugnis.pdf" download><i class="bi bi-file-earmark-text me-2"></i>Dienstzeugnis herunterladen</a></li> -->
+                </ul>
+                <!-- <img src="../assets/images/experience/Bildungsdirektion_W_Logo_srgb.png" alt="Vienna Education Logo" class="img-fluid ms-3" style="max-width: 150px; height: auto;"> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Resume Section -->
+
+
+    <!-- ======= Engagement Section ======= -->
+<section id="engagement" class="engagement section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Engagement</h2>
+    <p>Mein Weg im Energiesektor durch Führung und internationale Zusammenarbeit</p>
+  </div>
+
+  <div class="container">
+    
+    <!-- Engagement Timeline Item 1 -->
+    <div class="engagement-timeline-item" data-aos="fade-up" data-aos-delay="100">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-2 order-lg-1">
+          <div class="engagement-content">
+            <div class="engagement-badge">
+              <i class="bi bi-person-badge"></i>
+              <span>Führung</span>
+            </div>
+            <h3 class="engagement-title">Präsident - Junge Generation</h3>
+            <div class="engagement-meta d-flex flex-wrap gap-3 mb-3">
+              <span class="meta-item">
+                <i class="bi bi-calendar3"></i>
+                <small>April 2025 - heute</small>
+              </span>
+              <span class="meta-item">
+                <i class="bi bi-building"></i>
+                <small>Österreichische Kerntechnische Gesellschaft</small>
+              </span>
+            </div>
+            <p class="engagement-description">
+              Leitung des Young Generation Netzwerks der Österreichischen Kerntechnischen Gesellschaft, Förderung internationaler 
+              Zusammenarbeit und Vertretung von Österreichs nächster Generation von Energiefachkräften.
+            </p>
+            <ul class="engagement-highlights">
+              <li>Vorstandsmitglied (Sept. 2023 - März 2025) und davor Mitglied</li>
+              <li>Teilnahme an internationalen Konferenzen und Stakeholder-Meetings</li>
+              <li>Förderung des Austauschs mit jungen Fachkräften europaweit</li>
+              <li>Beitrag zu verschiedenen energiepolitischen Initiativen</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2">
+          <div class="engagement-image-container" data-aos="zoom-in" data-aos-delay="300">
+            <div class="swiper ans-leadership-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="../assets/images/engagement/Madrid_Presentation.JPG" alt="Core Committee Meeting Madrid 2024" class="img-fluid engagement-image" loading="lazy" width="800" height="600">
+                  <div class="slide-caption">
+                    <span>Core Committee Meeting Madrid</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="../assets/images/engagement/ENYGF_group_picture.JPG" alt="European Nuclear Society Presidents" class="img-fluid engagement-image" loading="lazy" width="800" height="600">
+                  <div class="slide-caption">
+                    <span>Europäische Nukleargesellschafts-Präsidenten</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="../assets/images/engagement/Madrid_Westinghouse.JPG" alt="Technical Tour Visit at Westinghouse" class="img-fluid engagement-image" loading="lazy" width="800" height="600">
+                  <div class="slide-caption">
+                    <span>Westinghouse Werksbesichtigung</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="image-overlay">
+              <div class="overlay-content">
+                <i class="bi bi-people-fill"></i>
+                <span>Führungsaktivitäten</span>
+                <small class="d-block mt-1">Internationale Zusammenarbeit & Networking</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Engagement Timeline Item 2 -->
+    <div class="engagement-timeline-item" data-aos="fade-up" data-aos-delay="400">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="engagement-image-container" data-aos="zoom-in" data-aos-delay="600">
+            <div class="swiper iync-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="../assets/images/engagement/IYNC_Presentation.JPEG" alt="Presentation of Austria Country Report at IYNC" class="img-fluid engagement-image" loading="lazy" width="800" height="600">
+                  <div class="slide-caption">
+                    <span>Länderbericht Präsentation</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="../assets/images/engagement/IYNC_group_picture_1.jpg" alt="IYNC Delegates Group Photo" class="img-fluid engagement-image" loading="lazy" width="800" height="600">
+                  <div class="slide-caption">
+                    <span>Internationale Delegierte</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="../assets/images/engagement/IYNC_group_picture_2.jpg" alt="IYNC Delegates Group Photo" class="img-fluid engagement-image" loading="lazy" width="800" height="600">
+                  <div class="slide-caption">
+                    <span>Internationale Delegierte</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="image-overlay">
+              <div class="overlay-content">
+                <i class="bi bi-globe"></i>
+                <span>IYNC Abu Dhabi Galerie</span>
+                <small class="d-block mt-1">Internationaler Jugend-Nuklear-Kongress</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="engagement-content">
+            <div class="engagement-badge">
+              <i class="bi bi-flag"></i>
+              <span>Internationaler Delegierter</span>
+            </div>
+            <h3 class="engagement-title">Ländervertreter</h3>
+            <div class="engagement-meta d-flex flex-wrap gap-3 mb-3">
+              <span class="meta-item">
+                <i class="bi bi-calendar3"></i>
+                <small>September - Oktober 2024</small>
+              </span>
+              <span class="meta-item">
+                <i class="bi bi-geo-alt"></i>
+                <small>Abu Dhabi, VAE</small>
+              </span>
+            </div>
+            <p class="engagement-description">
+              Vertretung Österreichs beim International Youth Nuclear Congress, technische Präsentationen 
+              und Präsentation von Österreichs nuklearer Expertise vor internationalem Publikum.
+            </p>
+            <ul class="engagement-highlights">
+              <li>Präsentation des umfassenden Österreich-Länderberichts</li>
+              <li>Vortrag technischer Arbeiten zu nuklearen Sicherheitsfortschritten</li>
+              <li>Networking mit jungen Fachkräften aus 50+ Ländern</li>
+              <li>Teilnahme an technischen Sessions und Workshops</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Engagement Timeline Item 3 -->
+    <div class="engagement-timeline-item" data-aos="fade-up" data-aos-delay="700">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-2 order-lg-1">
+          <div class="engagement-content">
+            <div class="engagement-badge">
+              <i class="bi bi-people"></i>
+              <span>Veranstaltungsorganisation</span>
+            </div>
+            <h3 class="engagement-title">Hauptorganisator</h3>
+            <div class="engagement-meta d-flex flex-wrap gap-3 mb-3">
+              <span class="meta-item">
+                <i class="bi bi-calendar3"></i>
+                <small>Oktober 2024</small>
+              </span>
+              <span class="meta-item">
+                <i class="bi bi-geo-alt"></i>
+                <small>Zwentendorf, Österreich</small>
+              </span>
+            </div>
+            <p class="engagement-description">
+              Erfolgreiche Organisation der gemeinsamen Nachwuchstagung der österreichischen, deutschen und schweizer 
+              Nukleargesellschaften, Zusammenführung junger Fachkräfte aus dem DACH-Raum.
+            </p>
+            <ul class="engagement-highlights">
+              <li>Koordination internationaler Teilnahme aus drei Ländern</li>
+              <li>Leitung der organisatorischen Planung und Veranstaltungsmoderation</li>
+              <li>Management des technischen Programms und Sprecherkoordination</li>
+              <li>Förderung grenzüberschreitenden Wissensaustauschs</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2">
+          <div class="engagement-image-container" data-aos="zoom-in" data-aos-delay="900">
+            <div class="swiper dach-conference-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="../assets/images/engagement/dach-conference-organizing.JPG" alt="Organizing DACH Conference" class="img-fluid engagement-image" loading="lazy" width="800" height="600">
+                  <div class="slide-caption">
+                    <span>Gruppenfoto</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="../assets/images/engagement/Zwentendorf2.JPG" alt="DACH Conference Networking" class="img-fluid engagement-image" loading="lazy" width="800" height="600">
+                  <div class="slide-caption">
+                    <span>Reaktorgrube</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="image-overlay">
+              <div class="overlay-content">
+                <i class="bi bi-calendar-event"></i>
+                <span>DACH Konferenz Galerie</span>
+                <small class="d-block mt-1">Wischen für mehr Fotos</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Engagement Timeline Item 4 - Nuclear Industry Conferences -->
+    <div class="engagement-timeline-item" data-aos="fade-up" data-aos-delay="900">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="engagement-image-container" data-aos="zoom-in" data-aos-delay="1000">
+            <div class="swiper conferences-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="../assets/images/engagement/Kerntechnik_Leipzig.JPG" alt="Kerntechnik Leipzig 2024" class="img-fluid engagement-image" loading="lazy" width="800" height="600">
+                  <div class="slide-caption">
+                    <span>Kerntechnik Leipzig 2024</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="../assets/images/engagement/IAEA_GC_2023.jpg" alt="IAEA General Conference 2023" class="img-fluid engagement-image" loading="lazy" width="800" height="600">
+                  <div class="slide-caption">
+                    <span>IAEA-Generalkonferenz 2023</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="../assets/images/engagement/ENEF_Bratislava_2023.jpg" alt="European Nuclear Energy Forum 2023" class="img-fluid engagement-image" loading="lazy" width="800" height="600">
+                  <div class="slide-caption">
+                    <span>ENEF Bratislava 2023</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="image-overlay">
+              <div class="overlay-content">
+                <i class="bi bi-calendar-event"></i>
+                <span>Industrie-Foren</span>
+                <small class="d-block mt-1">Internationale Politik- & Technikveranstaltungen</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="engagement-content">
+            <div class="engagement-badge">
+              <i class="bi bi-calendar-event"></i>
+              <span>Industriekonferenzen</span>
+            </div>
+            <h3 class="engagement-title">Internationale Konferenzen & Foren</h3>
+            <div class="engagement-meta d-flex flex-wrap gap-3 mb-3">
+              <span class="meta-item">
+                <i class="bi bi-calendar3"></i>
+                <small>2023 - 2025</small>
+              </span>
+              <span class="meta-item">
+                <i class="bi bi-geo-alt"></i>
+                <small>Verschiedene europäische Standorte</small>
+              </span>
+            </div>
+            <p class="engagement-description">
+              Aktive Teilnahme an hochrangigen internationalen Konferenzen und Foren in ganz Europa, 
+              Austausch mit Branchenführern, Politikern und technischen Experten im Bereich der Energieindustrie.
+            </p>
+            <ul class="engagement-highlights">
+              <li><strong>Kerntechnik 2024</strong> - Leipzig-Konferenz mit Präsentation "Aktivitätsbestimmung von Strahlungsquellen"</li>
+              <li class="no-tick">
+                <a href="../assets/publications/Präsentation_Hackl_Kerntechnik2024.pdf" target="_blank">
+                  <i class="bi bi-file-earmark-text me-2"></i>Präsentation ansehen
+                </a>
+              <li><strong>IAEA-Generalkonferenz 2023</strong> - Teilnahme an internationalen Politikdiskussionen</li>
+              <li><strong>Europäisches Nuklearenergie-Forum (ENEF) 2023</strong> - Bratislava-Stakeholder-Meeting mit Minister Robert Fico und Energieministern</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Engagement Timeline Item 5 - Nuclear Power Plant Tours -->
+    <div class="engagement-timeline-item" data-aos="fade-up" data-aos-delay="1100">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-2 order-lg-1">
+          <div class="engagement-content">
+            <div class="engagement-badge">
+              <i class="bi bi-lightning"></i>
+              <span>Technische Besichtigungen</span>
+            </div>
+            <h3 class="engagement-title">Kraftwerksbesichtigungen</h3>
+            <div class="engagement-meta d-flex flex-wrap gap-3 mb-3">
+              <span class="meta-item">
+                <i class="bi bi-calendar3"></i>
+                <small>2023 - 2025</small>
+              </span>
+              <span class="meta-item">
+                <i class="bi bi-geo-alt"></i>
+                <small>Europa und Naher Osten</small>
+              </span>
+            </div>
+            <p class="engagement-description">
+              Durchführung technischer Besichtigungen mehrerer Kraftwerke weltweit, 
+              direkte Einblicke in betriebliche Exzellenz, Sicherheitssysteme und technologische Innovationen.
+            </p>
+            <ul class="engagement-highlights">
+              <li><strong>KKW Barakah</strong> (2024) - Besichtigung des neuen 5600 MW APR-1400 Kraftwerks der VAE während IYNC</li>
+              <li><strong>KKW Temelin</strong> (2024) - Besichtigung der 2000 MW VVER-1000/320 Anlage in Tschechien</li>
+              <li><strong>KKW Paks</strong> (2023) - Technische Führung durch Ungarns 2000 MW VVER-440/213 Kernkraftwerk</li>
+              <li>Umfassendes Verständnis verschiedener Reaktortechnologien und Betriebsansätze gewonnen</li>
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2">
+          <div class="engagement-image-container" data-aos="zoom-in" data-aos-delay="1200">
+            <div class="swiper npp-tours-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="../assets/images/engagement/NPP_Temelin.JPG" alt="Visit of NPP Temelin 2024" class="img-fluid engagement-image" loading="lazy" width="800" height="600">
+                  <div class="slide-caption">
+                    <span>KKW Temelin, Tschechien</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="../assets/images/engagement/NPP_Paks.jpg" alt="Visit of NPP Paks 2023" class="img-fluid engagement-image" loading="lazy" width="800" height="600">
+                  <div class="slide-caption">
+                    <span>KKW Paks, Ungarn</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="image-overlay">
+              <div class="overlay-content">
+                <i class="bi bi-calendar-event"></i>
+                <span>Technische Anlagenbesichtigungen</span>
+                <small class="d-block mt-1">Besichtigungen weltweit</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Engagement Timeline Item 6 - Updated with Single Image -->
+    <div class="engagement-timeline-item" data-aos="fade-up" data-aos-delay="1000">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="engagement-image-container" data-aos="zoom-in" data-aos-delay="1200">
+            <img src="../assets/images/engagement/Technische_Universität_Wien_mainbuilding_mainentrance_northview.jpg" alt="TU Wien TOP Fellows program" class="img-fluid engagement-image" loading="lazy" width="800" height="600">
+            <div class="slide-caption">
+              <span>Hauptgebäude der TU Wien</span>
+            </div>
+            <div class="image-overlay">
+              <div class="overlay-content">
+                <!-- <i class="bi bi-award"></i> -->
+                <!-- <span>Elite-Studienprogramm</span> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="engagement-content">
+            <div class="engagement-badge">
+              <i class="bi bi-star"></i>
+              <span>Akademische Exzellenz</span>
+            </div>
+            <h3 class="engagement-title">TU Wien TOP Fellows</h3>
+            <div class="engagement-meta d-flex flex-wrap gap-3 mb-3">
+              <span class="meta-item">
+                <i class="bi bi-calendar3"></i>
+                <small>Januar 2024 - heute</small>
+              </span>
+              <span class="meta-item">
+                <i class="bi bi-mortarboard"></i>
+                <small>Elite-Studienprogramm</small>
+              </span>
+            </div>
+            <p class="engagement-description">
+              Ausgewählt für das prestigeträchtige TOP Fellows Programm der TU Wien, Anerkennung herausragender akademischer 
+              Leistungen und Führungspotentials unter Masterstudierenden.
+            </p>
+            <ul class="engagement-highlights">
+              <li>Auswahl aus leistungsstärksten Studierenden</li>
+              <li>Teilnahme an spezialisierten Workshops und Seminaren</li>
+              <li>Networking auf höchstem Niveau mit Branchenführern</li>
+              <li>Beitrag zu Exzellenzinitiativen der Universität</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section><!-- End Engagement Section -->
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Präsentation meiner akademischen und Forschungsprojekte.</p>
+      </div>
+      <div class="container">
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">Alle</li>
+            <li data-filter=".filter-thesis">Abschlussarbeiten</li>
+            <li data-filter=".filter-project">Projekte</li>
+            <li data-filter=".filter-publication">Publikationen</li>
+          </ul>
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <!-- Master's Thesis -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-thesis"> 
+              <div class="portfolio-content h-100">
+                <img src="../assets/images/portfolio/Master_Thesis.jpg" class="img-fluid" alt="Master Thesis" loading="lazy">
+                <div class="portfolio-info">
+                  <h4>Masterarbeit</h4>
+                  <p>In-Situ Messung des Widerstands während der Ausheilung neutronenbestrahlter Hochtemperatursupraleiter</p>
+                  <a href="../assets/publications/Abstract_Diplomarbeit_Daniel_Hackl.pdf" title="Abstract (Englisch) anzeigen" target="_blank" class="preview-link"><i class="bi bi-file-earmark-text me-2"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- Bachelor's Thesis -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-thesis"> 
+              <div class="portfolio-content h-100">
+                <img src="../assets/images/portfolio/Bachelor_Thesis.png" class="img-fluid" alt="Bachelor Thesis" loading="lazy">
+                <div class="portfolio-info">
+                  <h4>Bachelorarbeit</h4>
+                  <p>Sicherheitskonzepte für DWR von Generation II zu Generation III+</p>
+                  <a href="../assets/publications/Bachelor_Thesis_Daniel_Hackl.pdf" title="Arbeit ansehen" target="_blank" class="preview-link"><i class="bi bi-file-earmark-text me-2"></i></a>
+                  <!-- <a href="../assets/publications/Bachelor_Thesis_Daniel_Hackl.pdf" title="Arbeit herunterladen" download class="preview-link"><i class="bi bi-download"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- Radiation Exposure Project -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project"> 
+              <div class="portfolio-content h-100">
+                <img src="../assets/images/portfolio/radiation_exposure.jpg" class="img-fluid" alt="Radiation Exposure Project" loading="lazy">
+                <div class="portfolio-info">
+                  <h4>ISS Columbus Modul Projekt</h4>
+                  <p>Strahlungsexpositionsmessung im ISS Columbus Modul mittels Thermolumineszenzdosimetern</p>
+                  <a href="../assets/publications/Projektarbeit TLD (Daniel Hackl).pdf" title="Projekt ansehen" target="_blank" class="preview-link"><i class="bi bi-file-earmark-text me-2"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- Activity Determination Project -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project"> 
+              <div class="portfolio-content h-100">
+                <img src="../assets/images/portfolio/Activity_Determination.jpg" class="img-fluid" alt="Radiation Sources Project" loading="lazy">
+                <div class="portfolio-info">
+                  <h4>Aktivitätsbestimmung</h4>
+                  <p>Analyse von Co-60 und Cs-137 Strahlungsquellen mit verschiedenen Detektionsmethoden</p>
+                  <a href="../assets/publications/Projektarbeit Aktivitätsbestimmung (Daniel Hackl).pdf" title="Projekt ansehen" target="_blank" class="preview-link"><i class="bi bi-file-earmark-text me-2"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- Publication -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-publication"> 
+              <div class="portfolio-content h-100">
+                <img src="../assets/images/portfolio/IYNC_Paper.png" class="img-fluid" alt="Conference Publication" loading="lazy">
+                <div class="portfolio-info">
+                  <h4>Konferenzbeitrag</h4>
+                  <p>Evolution von Sicherheitskonzepten in Druckwasserreaktoren</p>
+                  <!-- <a href="../assets/publications/IYNC 2024 - Evolution of Safety Concepts in Pressurized Water Reactors (final).pdf" title="Paper herunterladen" download class="preview-link"><i class="bi bi-download"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+        </div>
+      </div>
+    </section><!-- /Portfolio Section -->
+
+    <!-- Languages Section -->
+    <section id="languages" class="languages section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Sprachen</h2>
+  </div>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="language-item">
+          <h5>Deutsch</h5>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        
+        <div class="language-item">
+          <h5>Englisch</h5>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        
+        <div class="language-item">
+          <h5>Kroatisch</h5>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-6">
+        <div class="language-item">
+          <h5>Russisch</h5>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        
+        <div class="language-item">
+          <h5>Französisch</h5>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- End Languages Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Kontakt</h2>
+    <p>Lassen Sie uns verbinden und über Energietechnikprojekte, Forschungskooperationen oder innovative Lösungen sprechen!</p>
+  </div>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+      <div class="row gy-4 justify-content-center">
+
+        <div class="col-lg-6 col-md-6">
+          <div class="info-item d-flex flex-column align-items-center text-center">
+            <i class="bi bi-geo-alt"></i>
+            <div>
+              <h3>Standort</h3>
+              <p>1030 Wien, Österreich</p>
+              <small class="text-muted">Verfügbar für Remote-Zusammenarbeit weltweit</small>
+            </div>
+          </div>
+        </div><!-- End Info Item -->
+
+        <div class="col-lg-6 col-md-6">
+          <div class="info-item d-flex flex-column align-items-center text-center">
+            <i class="bi bi-envelope"></i>
+            <div>
+              <h3>E-Mail</h3>
+              <p><a href="mailto:website@daniel-hackl.com">website@daniel-hackl.com</a></p>
+              <small class="text-muted">Primärer Kontaktweg für alle Anfragen</small>
+            </div>
+          </div>
+        </div><!-- End Info Item -->
+
+      </div>
+    </div>
+
+    <!-- Professional Interests Call-to-Action -->
+    <div class="row mt-5">
+      <div class="col-12" data-aos="fade-up" data-aos-delay="500">
+        <div class="collaboration-cta">
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <h4>
+                <i class="bi bi-lightbulb me-2"></i>
+                Interesse an Zusammenarbeit?
+              </h4>
+              <p class="mb-3">
+                Ich freue mich immer über Diskussionen zu Energietechnikprojekte, Forschungsmöglichkeiten 
+                und innovativen Lösungen im Nuklearsektor. Ob Sie technische Expertise, 
+                Forschungskooperation oder Beratungsdienstleistungen suchen - lassen Sie uns in Kontakt treten!
+              </p>
+              <div class="professional-links d-flex flex-wrap gap-3 mb-3">
+                <a href="https://www.linkedin.com/in/daniel-hackl-vienna" target="_blank" class="professional-link">
+                  <i class="bi bi-linkedin me-2"></i>
+                  <span>Auf LinkedIn vernetzen</span>
+                </a>
+                <a href="https://github.com/danielhackl-tu" target="_blank" class="professional-link">
+                  <i class="bi bi-github me-2"></i>
+                  <span>GitHub Projekte ansehen</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4 text-lg-end text-center mt-3 mt-lg-0">
+              <div class="cta-buttons">
+                <a href="mailto:website@daniel-hackl.com" class="btn btn-primary me-2 mb-2">
+                  <i class="bi bi-envelope me-2"></i>E-Mail senden
+                </a>
+                <a href="../assets/files/Lebenslauf_Daniel_Hackl_Website.pdf" download class="btn btn-outline-primary mb-2">
+                  <i class="bi bi-download me-2"></i>Lebenslauf herunterladen
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section><!-- /Contact Section -->
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <div class="copyright text-center ">
+         <p>© <span>Copyright</span> <strong class="px-1 sitename">Daniel Hackl</strong> <span>Alle Rechte vorbehalten</span></p>
+      </div>
+      <div class="credits">
+        <p>Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></p>
+        
+        <!-- Legal Links -->
+        <p class="legal-links">
+          <a href="impressum.html">Impressum</a> | 
+          <a href="datenschutz.html">Datenschutzerklärung</a>
+        </p>
+        
+        <p class="small text-muted">
+          Template: <a href="https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/">DevFolio</a> by <a href="https://bootstrapmade.com/">BootstrapMade</a>.<br>
+          Bildattributionen: 
+          Favicon: Atom-Logo-Illustration erstellt mit KI mittels Perplexity, Juni 2025.<br>
+          TU Wien Hauptgebäude Bild von <a href="https://commons.wikimedia.org/wiki/File:Technische_Universit%C3%A4t_Wien_mainbuilding_mainentrance_northview.jpg">Peter Haas</a> / <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a><br>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js?v=2"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Shared Components JS - Load immediately after Swiper with cache control -->
+  <script src="../assets/js/shared-components.js?v=1.1"></script>
+
+  <!-- Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+</html>

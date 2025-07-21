@@ -1,0 +1,26 @@
+RewriteEngine On
+
+# Force HTTPS and canonical domain (www.daniel-hackl.com)
+# This ensures both daniel-hackl.com and www.daniel-hackl.com always use HTTPS
+
+# Redirect non-www HTTP to www HTTPS
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^daniel-hackl\.com$ [NC]
+RewriteRule ^ https://www.daniel-hackl.com%{REQUEST_URI} [L,R=301]
+
+# Redirect non-www HTTPS to www HTTPS
+RewriteCond %{HTTPS} on
+RewriteCond %{HTTP_HOST} ^daniel-hackl\.com$ [NC]
+RewriteRule ^ https://www.daniel-hackl.com%{REQUEST_URI} [L,R=301]
+
+# Redirect www HTTP to www HTTPS
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^www\.daniel-hackl\.com$ [NC]
+RewriteRule ^ https://www.daniel-hackl.com%{REQUEST_URI} [L,R=301]
+
+# Alternative simpler approach (choose one):
+# RewriteCond %{HTTP_HOST} ^daniel-hackl\.com$ [NC]
+# RewriteRule ^ https://www.daniel-hackl.com%{REQUEST_URI} [L,R=301]
+# 
+# RewriteCond %{HTTPS} off
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

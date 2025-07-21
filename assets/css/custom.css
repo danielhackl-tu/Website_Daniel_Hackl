@@ -1,0 +1,1813 @@
+/* Reference document links styling */
+.resume-item a[download] {
+  color: #0563bb;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-top: 8px;
+  display: inline-block;
+}
+
+.resume-item a[download]:hover {
+  color: #067ded;
+}
+
+.resume-item a[download] i {
+  margin-right: 5px;
+}
+
+/* Remove bullet for .no-tick in any ul */
+li.no-tick {
+  list-style-type: none !important;
+  position: relative;
+  padding-left: 0 !important;
+}
+
+/* Legal Pages Styling */
+.legal-page {
+  font-family: var(--default-font);
+  background-color: #f8f9fa;
+}
+
+.legal-content {
+  padding: 60px 0;
+  min-height: calc(100vh - 160px);
+}
+
+.legal-header h1 {
+  color: var(--heading-color);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.legal-section {
+  background: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(1, 41, 112, 0.1);
+}
+
+.legal-section h2 {
+  color: var(--heading-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.legal-section h3 {
+  color: var(--heading-color);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-details {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--accent-color);
+}
+
+.tech-details {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+/* Footer legal links styling */
+.legal-links {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.legal-links a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.legal-links a:hover {
+  color: var(--contrast-color);
+  text-decoration: underline;
+}
+
+/* Hero background styling */
+.hero {
+  position: relative;
+  overflow: hidden;
+  min-height: calc(100vh - 92px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style the direct img child of hero section */
+.hero img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Dark overlay for text readability */
+.hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+/* Content container positioning */
+.hero .container {
+  position: relative;
+  z-index: 3;
+}
+
+/* Download CV button styling */
+.btn-get-started {
+  font-weight: 500;
+  font-size: 14px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  transition: 0.3s;
+  line-height: 1;
+  color: white;
+  background: #0072bb; /* French Blue */
+  animation-delay: 0.8s;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn-get-started:hover {
+  background: #0678e3;
+  color: white;
+  text-decoration: none;
+}
+
+/* Mobile fallback styling */
+.hero .mobile-fallback {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+/* Languages Section Progress Bar Styling */
+.languages .progress {
+  height: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.languages .progress-bar {
+  height: 100%;
+  background-color: var(--accent-color); /* Use French Blue */
+  transition: width 0.9s ease-in-out;
+  border-radius: 10px;
+}
+
+.languages .language-item {
+  margin-bottom: 25px;
+}
+
+.languages .language-item h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--heading-color);
+}
+
+/* Alternative: If you want to use the secondary blue color instead */
+.languages .progress-bar {
+  background-color: var(--accent-secondary); /* Use Blue Munsell if preferred */
+}
+
+/* Engagement Section Styling */
+.engagement {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.engagement .engagement-item {
+  background: #ffffff;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  border-left: 3px solid var(--accent-color); /* French Blue left border */
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 30px;
+}
+
+.engagement .engagement-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 25px rgba(0, 115, 186, 0.15);
+}
+
+.engagement .engagement-timeline-item {
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.engagement .engagement-timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Content Styling */
+.engagement .engagement-content {
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 115, 186, 0.1);
+  border-left: 5px solid var(--accent-color);
+  position: relative;
+  z-index: 2;
+}
+
+.engagement .engagement-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, var(--accent-color), var(--accent-secondary));
+  color: white;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.engagement .engagement-title {
+  color: var(--accent-color);
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-family: var(--heading-font);
+  line-height: 1.2;
+}
+
+.engagement .engagement-meta {
+  margin-bottom: 20px;
+}
+
+.engagement .engagement-meta .meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.engagement .engagement-meta .meta-item i {
+  color: var(--accent-color);
+  font-size: 16px;
+}
+
+.engagement .engagement-item h5 {
+  color: var(--heading-color);
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-family: var(--heading-font);
+}
+
+.engagement .engagement-item ul {
+  margin-bottom: 0;
+}
+
+.engagement .engagement-item ul li {
+  margin-bottom: 8px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.engagement .engagement-description {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--default-color);
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+
+.engagement .engagement-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.engagement .engagement-highlights li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--default-color);
+}
+
+.engagement .engagement-highlights li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent-color);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.engagement .engagement-highlights li.no-tick:before {
+  content: "";
+}
+
+/* Large Image Styling */
+.engagement .engagement-image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+}
+
+.engagement .engagement-image-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+.engagement .engagement-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: all 0.4s ease;
+}
+
+.engagement .engagement-image-container:hover .engagement-image {
+  transform: scale(1.05);
+}
+
+/* Image Overlay */
+.engagement .image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  padding: 30px 25px 25px;
+  transform: translateY(100%);
+  transition: all 0.4s ease;
+}
+
+.engagement .engagement-image-container:hover .image-overlay {
+  transform: translateY(0);
+}
+
+.engagement .overlay-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.engagement .overlay-content i {
+  font-size: 20px;
+  color: var(--accent-color);
+}
+
+/* Enhanced Engagement Image Container with Swiper Support */
+/* AI-assisted development: Multi-image gallery with smooth transitions */
+
+.engagement .dach-conference-swiper {
+  width: 100%;
+  height: 400px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.engagement .dach-conference-swiper .swiper-slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.engagement .dach-conference-swiper .swiper-slide img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: all 0.4s ease;
+}
+
+.engagement .engagement-image-container:hover .dach-conference-swiper .swiper-slide img {
+  transform: scale(1.05);
+}
+
+/* Slide Caption Styling */
+.engagement .slide-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: inline-block;
+  background: rgba(0, 115, 186, 0.9);
+  color: white;
+  padding: 6px 12px;      /* Reduced padding */
+  border-radius: 18px;    /* Slightly smaller radius */
+  font-size: 13px;        /* Slightly smaller font */
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+  z-index: 10;
+  white-space: normal;
+  max-width: 75%;         /* Tighter max width */
+  box-sizing: border-box;
+}
+
+.engagement .dach-conference-swiper:hover .slide-caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Swiper Navigation Buttons */
+.engagement .dach-conference-swiper .swiper-button-next,
+.engagement .dach-conference-swiper .swiper-button-prev {
+  color: var(--accent-color);
+  background: rgba(255, 255, 255, 0.9);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: -20px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.engagement .dach-conference-swiper .swiper-button-next:after,
+.engagement .dach-conference-swiper .swiper-button-prev:after {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.engagement .engagement-image-container:hover .swiper-button-next,
+.engagement .engagement-image-container:hover .swiper-button-prev {
+  opacity: 1;
+}
+
+.engagement .dach-conference-swiper .swiper-button-next:hover,
+.engagement .dach-conference-swiper .swiper-button-prev:hover {
+  background: var(--accent-color);
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Swiper Pagination */
+.engagement .dach-conference-swiper .swiper-pagination {
+  bottom: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.engagement .engagement-image-container:hover .swiper-pagination {
+  opacity: 1;
+}
+
+.engagement .dach-conference-swiper .swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.7);
+  border: 2px solid var(--accent-color);
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+  opacity: 1;
+}
+
+.engagement .dach-conference-swiper .swiper-pagination-bullet-active {
+  background: var(--accent-color);
+  transform: scale(1.2);
+}
+
+/* Enhanced Main Overlay */
+.engagement .engagement-image-container .image-overlay {
+  background: linear-gradient(transparent 60%, rgba(0, 0, 0, 0.8));
+  padding: 40px 25px 25px;
+}
+
+.engagement .image-overlay small {
+  font-size: 12px;
+  opacity: 0.8;
+  font-style: italic;
+}
+
+/* Mobile Responsiveness for Swiper */
+@media (max-width: 992px) {
+  .engagement .dach-conference-swiper {
+    height: 300px;
+  }
+  
+  .engagement .dach-conference-swiper .swiper-slide img {
+    height: 300px;
+  }
+  
+  .engagement .dach-conference-swiper .swiper-button-next,
+  .engagement .dach-conference-swiper .swiper-button-prev {
+    opacity: 1; /* Always visible on mobile */
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .engagement .dach-conference-swiper {
+    height: 250px;
+  }
+  
+  .engagement .dach-conference-swiper .swiper-slide img {
+    height: 250px;
+  }
+  
+  .engagement .slide-caption {
+    opacity: 1;
+    transform: translateY(0);
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+  
+  .engagement .swiper-pagination {
+    opacity: 1 !important;
+  }
+}
+
+/* Loading State */
+.engagement .dach-conference-swiper .swiper-slide {
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.engagement .dach-conference-swiper .swiper-slide img {
+  transition: opacity 0.3s ease;
+}
+
+.engagement .dach-conference-swiper .swiper-slide img[loading] {
+  opacity: 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 992px) {
+  .engagement .engagement-timeline-item {
+    margin-bottom: 60px;
+  }
+  
+  .engagement .engagement-image {
+    height: 300px;
+  }
+  
+  .engagement .engagement-content {
+    padding: 30px 25px;
+    margin-top: 30px;
+  }
+  
+  .engagement .engagement-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .engagement .engagement-image {
+    height: 250px;
+  }
+  
+  .engagement .engagement-content {
+    padding: 25px 20px;
+  }
+  
+  .engagement .engagement-title {
+    font-size: 22px;
+  }
+  
+  .engagement .engagement-meta {
+    flex-direction: column;
+    gap: 10px !important;
+  }
+  
+  .engagement .image-overlay {
+    position: static;
+    transform: none;
+    background: rgba(0, 115, 186, 0.1);
+    margin-top: 15px;
+    border-radius: 10px;
+  }
+  
+  .engagement .overlay-content {
+    color: var(--accent-color);
+  }
+}
+
+/* IYNC Swiper Gallery */
+/* AI-assisted development: Multi-image gallery for international activities */
+
+.engagement .iync-swiper {
+  width: 100%;
+  height: 400px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.engagement .iync-swiper .swiper-slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.engagement .iync-swiper .swiper-slide img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: all 0.4s ease;
+}
+
+.engagement .engagement-image-container:hover .iync-swiper .swiper-slide img {
+  transform: scale(1.05);
+}
+
+/* IYNC Swiper Navigation Buttons */
+.engagement .iync-swiper .swiper-button-next,
+.engagement .iync-swiper .swiper-button-prev {
+  color: var(--accent-color); /* French Blue */
+  background: rgba(255, 255, 255, 0.95);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: -20px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 115, 186, 0.2);
+  border: 2px solid rgba(0, 115, 186, 0.1);
+}
+
+.engagement .iync-swiper .swiper-button-next:after,
+.engagement .iync-swiper .swiper-button-prev:after {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.engagement .engagement-image-container:hover .iync-swiper .swiper-button-next,
+.engagement .engagement-image-container:hover .iync-swiper .swiper-button-prev {
+  opacity: 1;
+}
+
+.engagement .iync-swiper .swiper-button-next:hover,
+.engagement .iync-swiper .swiper-button-prev:hover {
+  background: var(--accent-color);
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 115, 186, 0.4);
+}
+
+.engagement .iync-swiper .swiper-button-next:hover:after,
+.engagement .iync-swiper .swiper-button-prev:hover:after {
+  color: white;
+}
+
+/* IYNC Swiper Pagination */
+.engagement .iync-swiper .swiper-pagination {
+  bottom: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.engagement .engagement-image-container:hover .iync-swiper .swiper-pagination {
+  opacity: 1;
+}
+
+.engagement .iync-swiper .swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid var(--accent-color);
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.engagement .iync-swiper .swiper-pagination-bullet-active {
+  background: var(--accent-color);
+  transform: scale(1.3);
+  box-shadow: 0 2px 8px rgba(0, 115, 186, 0.4);
+}
+
+/* Enhanced Contact Section with Larger Info Cards */
+/* AI-assisted development: Privacy-focused contact layout */
+
+.contact .info-wrap {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  padding: 50px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  margin-bottom: 40px;
+}
+
+.contact .info-item {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  border-top: 4px solid var(--accent-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact .info-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 115, 186, 0.2);
+}
+
+.contact .info-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-color), var(--accent-secondary));
+  transition: all 0.3s ease;
+}
+
+.contact .info-item:hover::before {
+  height: 6px;
+}
+
+.contact .info-item i {
+  font-size: 40px;
+  color: var(--accent-color);
+  margin-bottom: 25px;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.contact .info-item:hover i {
+  transform: scale(1.1);
+  color: var(--accent-secondary);
+}
+
+.contact .info-item h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 20px;
+  font-family: var(--heading-font);
+}
+
+.contact .info-item p {
+  margin-bottom: 12px;
+  color: var(--default-color);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.contact .info-item small {
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.contact .info-item a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.contact .info-item a:hover {
+  color: var(--accent-secondary);
+  text-decoration: underline;
+}
+
+/* Enhanced Professional Links in CTA Section */
+.contact .professional-links {
+  margin-top: 15px;
+}
+
+.contact .professional-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.contact .professional-link:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.contact .professional-link i {
+  font-size: 18px;
+}
+
+/* Enhanced Collaboration CTA Section */
+.contact .collaboration-cta {
+  background: linear-gradient(135deg, var(--accent-color), var(--accent-secondary));
+  color: white;
+  padding: 45px 35px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 115, 186, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact .collaboration-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="80" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="60" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="70" cy="30" r="1.5" fill="rgba(255,255,255,0.1)"/></svg>');
+  opacity: 0.3;
+}
+
+.contact .collaboration-cta * {
+  position: relative;
+  z-index: 2;
+}
+
+.contact .collaboration-cta h4 {
+  color: white;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.contact .collaboration-cta p {
+  font-size: 17px;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+/* Map Section Enhancement */
+.contact .contact-map,
+.contact .contact-form {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.contact .contact-map h4,
+.contact .contact-form h4 {
+  color: var(--accent-color);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  font-family: var(--heading-font);
+}
+
+.contact .map-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+}
+
+.contact .map-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+}
+
+/* Enhanced Form Styling */
+.contact .php-email-form label {
+  font-weight: 600;
+  color: var(--heading-color);
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.contact .php-email-form .form-control {
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  padding: 12px 15px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  background: #fafafa;
+}
+
+.contact .php-email-form .form-control:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 0.2rem rgba(0, 115, 186, 0.15);
+  background: #ffffff;
+}
+
+.contact .php-email-form button[type="submit"] {
+  background: linear-gradient(135deg, var(--accent-color), var(--accent-secondary));
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 115, 186, 0.3);
+  min-width: 180px;
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 115, 186, 0.4);
+}
+
+/* Collaboration CTA Section */
+.contact .collaboration-cta {
+  background: linear-gradient(135deg, var(--accent-color), var(--accent-secondary));
+  color: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 115, 186, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact .collaboration-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="80" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="60" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="70" cy="30" r="1.5" fill="rgba(255,255,255,0.1)"/></svg>');
+  opacity: 0.3;
+}
+
+.contact .collaboration-cta * {
+  position: relative;
+  z-index: 2;
+}
+
+.contact .collaboration-cta h4 {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.contact .collaboration-cta p {
+  font-size: 16px;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+.contact .cta-buttons .btn {
+  padding: 14px 28px;
+  border-radius: 25px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  min-width: 160px;
+  justify-content: center;
+}
+
+.contact .cta-buttons .btn-primary {
+  background: white;
+  color: var(--accent-color);
+  border: 2px solid white;
+}
+
+.contact .cta-buttons .btn-primary:hover {
+  background: transparent;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+}
+
+.contact .cta-buttons .btn-outline-primary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.contact .cta-buttons .btn-outline-primary:hover {
+  background: white;
+  color: var(--accent-color);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Form Status Messages */
+.contact .loading,
+.contact .error-message,
+.contact .sent-message {
+  margin: 15px 0;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 14px;
+}
+
+.contact .loading {
+  background: #e8f4f8;
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.contact .error-message {
+  background: #ffe6e6;
+  color: #d63031;
+  border: 1px solid #d63031;
+}
+
+.contact .sent-message {
+  background: #e8f5e8;
+  color: #00b74a;
+  border: 1px solid #00b74a;
+}
+
+/* Enhanced Professional Links Styling */
+.contact .info-item a[href*="linkedin"] {
+  color: #0077b5;
+  font-weight: 600;
+}
+
+.contact .info-item a[href*="linkedin"]:hover {
+  color: #005885;
+}
+
+.contact .info-item a[href*="github"] {
+  color: #333;
+  font-weight: 600;
+}
+
+.contact .info-item a[href*="github"]:hover {
+  color: #000;
+}
+
+/* Enhanced social links with better spacing */
+.contact .social-links {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact .social-link {
+  min-width: 140px;
+  text-align: center;
+}
+
+/* Professional status indicator */
+.contact .additional-info .text-muted {
+  font-size: 14px;
+  border-top: 1px solid #e9ecef;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.contact .additional-info .text-muted i {
+  color: var(--accent-color);
+}
+
+/* Mobile responsiveness for professional links */
+@media (max-width: 768px) {
+  .contact .social-links {
+    flex-direction: column;
+    gap: 15px !important;
+  }
+  
+  .contact .social-link {
+    min-width: auto;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .contact .info-wrap {
+    padding: 30px 15px;
+  }
+  
+  .contact .contact-map,
+  .contact .contact-form {
+    padding: 25px 20px;
+    margin-bottom: 30px;
+  }
+  
+  .contact .collaboration-cta {
+    padding: 30px 20px;
+  }
+  
+  .contact .collaboration-cta h4 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact .info-item {
+    margin-bottom: 20px;
+    padding: 25px 15px;
+  }
+  
+  .contact .info-item i {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  .contact .cta-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .contact .cta-buttons .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .contact .map-container iframe {
+    height: 300px;
+  }
+}
+
+/* Enhanced Swiper Navigation with Consistent French Blue Theme */
+/* AI-assisted development: Unified color scheme for all engagement galleries */
+
+/* ANS Leadership Swiper Navigation */
+.engagement .ans-leadership-swiper .swiper-button-next,
+.engagement .ans-leadership-swiper .swiper-button-prev {
+  color: var(--accent-color); /* French Blue */
+  background: rgba(255, 255, 255, 0.95);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: -20px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 115, 186, 0.2);
+  border: 2px solid rgba(0, 115, 186, 0.1);
+}
+
+.engagement .ans-leadership-swiper .swiper-button-next:after,
+.engagement .ans-leadership-swiper .swiper-button-prev:after {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.engagement .engagement-image-container:hover .ans-leadership-swiper .swiper-button-next,
+.engagement .engagement-image-container:hover .ans-leadership-swiper .swiper-button-prev {
+  opacity: 1;
+}
+
+.engagement .ans-leadership-swiper .swiper-button-next:hover,
+.engagement .ans-leadership-swiper .swiper-button-prev:hover {
+  background: var(--accent-color);
+  color: white;
+  transform: scale(1.1);
+}
+
+.engagement .ans-leadership-swiper .swiper-button-next:hover:after,
+.engagement .ans-leadership-swiper .swiper-button-prev:hover:after {
+  color: white;
+}
+
+/* ANS Leadership Swiper Pagination */
+.engagement .ans-leadership-swiper .swiper-pagination {
+  bottom: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.engagement .engagement-image-container:hover .ans-leadership-swiper .swiper-pagination {
+  opacity: 1;
+}
+
+.engagement .ans-leadership-swiper .swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid var(--accent-color);
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.engagement .ans-leadership-swiper .swiper-pagination-bullet-active {
+  background: var(--accent-color);
+  transform: scale(1.3);
+  box-shadow: 0 2px 8px rgba(0, 115, 186, 0.4);
+}
+
+/* IYNC Swiper Navigation */
+.engagement .iync-swiper .swiper-button-next,
+.engagement .iync-swiper .swiper-button-prev {
+  color: var(--accent-color); /* French Blue */
+  background: rgba(255, 255, 255, 0.95);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: -20px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 115, 186, 0.2);
+  border: 2px solid rgba(0, 115, 186, 0.1);
+}
+
+.engagement .iync-swiper .swiper-button-next:after,
+.engagement .iync-swiper .swiper-button-prev:after {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.engagement .engagement-image-container:hover .iync-swiper .swiper-button-next,
+.engagement .engagement-image-container:hover .iync-swiper .swiper-button-prev {
+  opacity: 1;
+}
+
+.engagement .iync-swiper .swiper-button-next:hover,
+.engagement .iync-swiper .swiper-button-prev:hover {
+  background: var(--accent-color);
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 115, 186, 0.4);
+}
+
+.engagement .iync-swiper .swiper-button-next:hover:after,
+.engagement .iync-swiper .swiper-button-prev:hover:after {
+  color: white;
+}
+
+/* IYNC Swiper Pagination */
+.engagement .iync-swiper .swiper-pagination {
+  bottom: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.engagement .engagement-image-container:hover .iync-swiper .swiper-pagination {
+  opacity: 1;
+}
+
+.engagement .iync-swiper .swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid var(--accent-color);
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.engagement .iync-swiper .swiper-pagination-bullet-active {
+  background: var(--accent-color);
+  transform: scale(1.3);
+  box-shadow: 0 2px 8px rgba(0, 115, 186, 0.4);
+}
+
+/* Fix for engagement image display issues */
+.engagement .swiper-slide {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fa;
+  position: relative;
+}
+
+.engagement .swiper-slide img {
+  display: block !important;
+  width: 100% !important;
+  height: 400px !important;
+  object-fit: cover !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Ensure swiper containers have proper dimensions */
+.engagement .swiper {
+  width: 100% !important;
+  height: 400px !important;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #f8f9fa;
+}
+
+.engagement .swiper-wrapper {
+  height: 100% !important;
+}
+
+/* Fix for missing images - show placeholder */
+.engagement .swiper-slide:empty {
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-style: italic;
+}
+
+.engagement .swiper-slide:empty::after {
+  content: "Image loading...";
+  font-size: 16px;
+  color: #999;
+}
+
+/* Force image loading */
+.engagement .swiper-slide img[loading="lazy"] {
+  loading: eager !important;
+}
+
+/* Debug styling - remove after fixing */
+/* .engagement .swiper-slide {
+  border: 1px solid rgba(255, 0, 0, 0.1); /* Temporary red border to see slide boundaries */
+  /* min-height: 400px;
+} */ */
+
+/* Header Layout - Clean and Responsive */
+.header .container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .nav-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Desktop Language Switcher - Only on XL screens and above */
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+.language-switcher .lang-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  color: var(--nav-color);
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.language-switcher .lang-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--nav-hover-color);
+  transform: translateY(-1px);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.language-switcher .lang-link.active {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: var(--nav-hover-color);
+}
+
+.language-switcher .flag {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.language-switcher .lang-text {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Mobile Language Switcher - At TOP of mobile menu */
+.mobile-lang-switcher {
+  margin-top: 0;        /* Remove top margin since it's now at top */
+  margin-bottom: 20px;  /* Add bottom margin instead */
+  padding-top: 0;       /* Remove top padding */
+  padding-bottom: 20px; /* Add bottom padding */
+}
+
+.mobile-lang-divider {
+  height: 1px;
+  background: rgba(0, 0, 0, 0.1);
+  margin: 10px 20px 15px 20px; /* Adjust margins for top position */
+}
+
+.mobile-lang-item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-lang-link {
+  display: flex !important;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px !important;
+  color: var(--nav-dropdown-color) !important;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-radius: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.mobile-lang-link:hover {
+  background: rgba(0, 115, 186, 0.1) !important;
+  color: var(--accent-color) !important;
+}
+
+.mobile-lang-link.active {
+  background: transparent !important;
+  color: var(--accent-color) !important;
+  font-weight: 600;
+}
+
+.mobile-lang-link .flag {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.mobile-lang-link span:last-child {
+  font-size: 16px;
+}
+
+/* Ensure the active link text color is consistently blue */
+.mobile-lang-link.active span {
+  color: var(--accent-color) !important;
+}
+
+/* Ensure proper mobile menu behavior */
+@media (max-width: 1199px) {
+  .header .nav-container {
+    gap: 0; /* Remove gap on mobile */
+  }
+  
+  .navmenu {
+    margin-right: 0;
+  }
+  
+  /* Hide desktop language switcher completely on mobile */
+  .language-switcher {
+    display: none !important;
+  }
+}
+
+/* Desktop-only adjustments */
+@media (min-width: 1200px) {
+  .mobile-lang-switcher {
+    display: none !important;
+  }
+}
+
+/* Logo spacing - ensure proper spacing */
+.header .logo {
+  margin-right: 0;
+}
+
+.header .logo h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/* Mobile menu toggle positioning */
+.mobile-nav-toggle {
+  font-size: 28px;
+  margin-left: 10px;
+}
+
+/* Slide Caption Styles für ALLE Swiper - FEHLENDE REGELN */
+
+/* Basis Caption Style (falls noch nicht vorhanden) */
+.engagement .slide-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(0, 115, 186, 0.9);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+  z-index: 10;
+}
+
+/* ANS Leadership Swiper Caption - FEHLEND */
+.engagement .ans-leadership-swiper:hover .slide-caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* IYNC Swiper Caption - FEHLEND */
+.engagement .iync-swiper:hover .slide-caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Mobile: Captions immer sichtbar für alle Swiper */
+@media (max-width: 768px) {
+  .engagement .ans-leadership-swiper .slide-caption,
+  .engagement .iync-swiper .slide-caption,
+  .engagement .dach-conference-swiper .slide-caption {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* DACH Conference Swiper Image Hover Effect - MISSING RULE */
+.engagement .engagement-image-container:hover .dach-conference-swiper .swiper-slide img {
+  transform: scale(1.05);
+}
+
+/* DACH Conference Swiper Image Base Transition - MISSING */
+.engagement .dach-conference-swiper .swiper-slide img {
+  transition: all 0.4s ease;
+}
+
+/* Ensure ALL Swiper images have consistent transitions */
+.engagement .ans-leadership-swiper .swiper-slide img,
+.engagement .iync-swiper .swiper-slide img,
+.engagement .dach-conference-swiper .swiper-slide img {
+  transition: transform 0.4s ease, opacity 0.3s ease;
+}
+
+/* Fix für normale Groß-/Kleinschreibung in Jobtiteln - KORRIGIERT */
+.resume .resume-item h4 {
+  text-transform: none !important;
+}
+
+/* Fix for conferences-swiper and npp-tours-swiper styling consistency */
+/* Make navigation arrows consistent with other swipers */
+.engagement .conferences-swiper .swiper-button-next,
+.engagement .conferences-swiper .swiper-button-prev,
+.engagement .npp-tours-swiper .swiper-button-next,
+.engagement .npp-tours-swiper .swiper-button-prev {
+  color: var(--accent-color); /* French Blue */
+  background: rgba(255, 255, 255, 0.95);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: -20px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 115, 186, 0.2);
+  border: 2px solid rgba(0, 115, 186, 0.1);
+}
+
+.engagement .conferences-swiper .swiper-button-next:after,
+.engagement .conferences-swiper .swiper-button-prev:after,
+.engagement .npp-tours-swiper .swiper-button-next:after,
+.engagement .npp-tours-swiper .swiper-button-prev:after {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.engagement .engagement-image-container:hover .conferences-swiper .swiper-button-next,
+.engagement .engagement-image-container:hover .conferences-swiper .swiper-button-prev,
+.engagement .engagement-image-container:hover .npp-tours-swiper .swiper-button-next,
+.engagement .engagement-image-container:hover .npp-tours-swiper .swiper-button-prev {
+  opacity: 1;
+}
+
+.engagement .conferences-swiper .swiper-button-next:hover,
+.engagement .conferences-swiper .swiper-button-prev:hover,
+.engagement .npp-tours-swiper .swiper-button-next:hover,
+.engagement .npp-tours-swiper .swiper-button-prev:hover {
+  background: var(--accent-color);
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 115, 186, 0.4);
+}
+
+.engagement .conferences-swiper .swiper-button-next:hover:after,
+.engagement .conferences-swiper .swiper-button-prev:hover:after,
+.engagement .npp-tours-swiper .swiper-button-next:hover:after,
+.engagement .npp-tours-swiper .swiper-button-prev:hover:after {
+  color: white;
+}
+
+/* Fix caption visibility on hover */
+.engagement .conferences-swiper:hover .slide-caption,
+.engagement .npp-tours-swiper:hover .slide-caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Make sure captions have consistent styling */
+.engagement .conferences-swiper .slide-caption,
+.engagement .npp-tours-swiper .slide-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(0, 115, 186, 0.9);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+  z-index: 10;
+}
+
+/* Make sure images transition consistently */
+.engagement .conferences-swiper .swiper-slide img,
+.engagement .npp-tours-swiper .swiper-slide img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: all 0.4s ease;
+}
+
+.engagement .engagement-image-container:hover .conferences-swiper .swiper-slide img,
+.engagement .engagement-image-container:hover .npp-tours-swiper .swiper-slide img {
+  transform: scale(1.05);
+}
+
+/* Pagination styling consistency */
+.engagement .conferences-swiper .swiper-pagination,
+.engagement .npp-tours-swiper .swiper-pagination {
+  bottom: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.engagement .engagement-image-container:hover .conferences-swiper .swiper-pagination,
+.engagement .engagement-image-container:hover .npp-tours-swiper .swiper-pagination {
+  opacity: 1;
+}
+
+.engagement .conferences-swiper .swiper-pagination-bullet,
+.engagement .npp-tours-swiper .swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid var(--accent-color);
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.engagement .conferences-swiper .swiper-pagination-bullet-active,
+.engagement .npp-tours-swiper .swiper-pagination-bullet-active {
+  background: var(--accent-color);
+  transform: scale(1.3);
+  box-shadow: 0 2px 8px rgba(0, 115, 186, 0.4);
+}
+
+/* Mobile styles consistency */
+@media (max-width: 768px) {
+  .engagement .conferences-swiper .slide-caption,
+  .engagement .npp-tours-swiper .slide-caption {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .engagement .conferences-swiper,
+  .engagement .npp-tours-swiper {
+    height: 250px;
+  }
+  
+  .engagement .conferences-swiper .swiper-slide img,
+  .engagement .npp-tours-swiper .swiper-slide img {
+    height: 250px;
+  }
+}
+
+/* Mobile-specific fixes for engagement section main image overlay */
+@media (max-width: 767.98px) {
+  .engagement-image-container .image-overlay {
+    position: static !important;
+    transform: none !important;
+    background: rgba(0, 115, 186, 0.9) !important;
+    color: white !important;
+    margin-top: 0 !important;
+    padding: 15px 20px !important;
+    border-radius: 10px !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .engagement-image-container .overlay-content {
+    color: white !important;
+  }
+  
+  .engagement-image-container .overlay-content i {
+    color: white !important;
+  }
+  
+  /* Ensure proper spacing between image and overlay */
+  .engagement-image-container {
+    margin-bottom: 0 !important;
+  }
+  
+  /* Remove any border radius from bottom of image container to ensure seamless connection */
+  .engagement-image-container .swiper,
+  .engagement-image-container .engagement-image {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+  
+  /* Make sure overlay connects seamlessly */
+  .engagement-image-container .image-overlay {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+  }
+}
+
+/* Tablet adjustments */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .engagement-image-container .image-overlay {
+    padding: 25px 20px;
+  }
+}
+
+/* Ensure desktop styles remain unchanged */
+@media (min-width: 992px) {
+  .engagement-image-container .image-overlay {
+    /* Desktop styles remain as they are */
+  }
+}
+
+/* Fix scroll-to-section offset for service pages */
+/* Account for sticky header height when scrolling to sections */
+html {
+  scroll-padding-top: 100px; /* Adjust based on header height */
+}
+
+/* Alternative approach for sections with IDs */
+section[id] {
+  scroll-margin-top: 100px;
+}
+
+/* Specific fix for service page sections */
+.service-page section[id] {
+  scroll-margin-top: 120px; /* Slightly more for service pages */
+}
+
+/* Service page heading targets */
+#programming,
+#measurement-control,
+#data-processing,
+#statistical-analysis,
+#thermal-analysis,
+#neutron-irradiation,
+#materials-characterization,
+#cryogenic-systems,
+#research-collaboration,
+#supervision,
+#project-management,
+#technical-writing,
+#radiation-protection,
+#nuclear-safety,
+#instrumentation-design,
+#measurement-systems,
+#energy-analysis,
+#efficiency-optimization,
+#renewable-integration,
+#energy-systems {
+  scroll-margin-top: 120px;
+}
